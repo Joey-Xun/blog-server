@@ -17,3 +17,7 @@ npm run build
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### 项目介绍
+
+该文件夹为移动端博客展示页面，使用vue，与服务端交互暂未完成

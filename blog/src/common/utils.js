@@ -23,16 +23,6 @@ export function debounce(func, delay) {
     }
 }
 
-//是否滚动到底部
-export function isScrollBottom() {
-    let scrollTop = document.documentElement.scrollTop || document.body.scrollTop
-    let clientHeight = document.documentElement.clientHeight || document.body.clientHeight
-    let scrollHeight = document.documentElement.scrollHeight || document.body.scrollHeight
-    if (scrollTop + clientHeight == scrollHeight) {
-        return true
-    }
-    return false
-}
 
 //将组件暴露在全局
 import Vue from 'vue'

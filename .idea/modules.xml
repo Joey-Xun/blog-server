@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../学校/0前端课程/blog-exercise/.idea/blog-exercise.iml" filepath="$PROJECT_DIR$/../学校/0前端课程/blog-exercise/.idea/blog-exercise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/myBlog.iml" filepath="$PROJECT_DIR$/.idea/myBlog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../nodejs-myblog-master/nodejs-myblog/.idea/nodejs-myblog.iml" filepath="$PROJECT_DIR$/../nodejs-myblog-master/nodejs-myblog/.idea/nodejs-myblog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../学校/0前端课程/18VUE/vuejs资料和代码/.idea/vuejs资料和代码.iml" filepath="$PROJECT_DIR$/../学校/0前端课程/18VUE/vuejs资料和代码/.idea/vuejs资料和代码.iml" />
+    </modules>
+  </component>
+</project>
