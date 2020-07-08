@@ -1,7 +1,7 @@
 <template>
     <div id="content">
         <div class="menu-item">
-            <img src="../../../assets/images/home.png" width="25px">
+            <img src="~assets/img/home.png" />
             <span>首页</span>
         </div>
     </div>
@@ -17,20 +17,25 @@ export default {
 }
 </script>
 <style scoped>
+    #content {
+        float:left;
+        width: 15%;
+        height: 100%;
+        background-color:#338ace;
+    }
     .menu-item {
         height: 50px;
         line-height: 50px;
-        padding: 20px;
+        padding: 30px;
         cursor: pointer;
     }
-    .menu-item img , .menu-item span {
+    .menu-item img {
         display: inline-block;
-        vertical-align: middle;
-        color: #fff;
-        font-size: 14px;
+        width: 25px;
     }
     .menu-item span {
         position: relative;
+        color: #fff;
         top: -5px;
         left: 20px;
         font-weight: bold;

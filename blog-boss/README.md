@@ -17,3 +17,6 @@ npm run build
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+## 项目介绍
+博客管理系统前端实现，技术栈为vue+axios

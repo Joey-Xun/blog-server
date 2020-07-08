@@ -3,32 +3,32 @@ import VueRouter from 'vue-router'
 
 Vue.use(VueRouter)
 
-const Home=()=>import('views/home/Home.vue')
-const About=()=>import('views/about/About.vue')
-const NotFound=()=>import('views/notFound/NotFound.vue')
-const Details=()=>import('views/details/Details.vue')
+const Index=()=>import('views/index/Index.vue')
+const Login=()=>import('views/login/Login.vue')
+const Article=()=>import('components/content/index/Article.vue')
+const List=()=>import('components/content/index/List.vue')
+
 
 
 const routes=[
     {
-        path: '',
-        redirect: '/home'
+        path: '/',
+        component: Index,
+        redirect: '/login',
+        children: [
+            {
+                path: "article",
+                component: Article
+            },
+            {
+                path: "list",
+                component: List
+            }
+        ]
     },
     {
-        path: '/home',
-        component: Home
-    },
-    {
-        path: '/about',
-        component: About
-    },
-    {
-        path: '/details',
-        component: Details
-    },
-    {
-        path: '/notfound',
-        component: NotFound
+        path: "/login",
+        component: Login
     }
 ]
 

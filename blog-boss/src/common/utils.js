@@ -1,17 +1,3 @@
-// rem脚本
-export function rem() {
-    const docEl = document.documentElement
-    const resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize'
-    const recalc = function () {
-        const clientWidth = docEl.clientWidth
-        if (!clientWidth) return
-        docEl.style.fontSize = 100 * (clientWidth / 320) + 'px'
-    }
-    if (!document.addEventListener) return
-    window.addEventListener(resizeEvt, recalc, false)
-    document.addEventListener('DOMContentLoaded', recalc, false)
-}
-
 // 防抖
 export function debounce(func, delay) {
     let timer = null

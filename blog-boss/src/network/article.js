@@ -1,26 +1,32 @@
-import {request} from "network/request";
+import {request} from "./request";
 export default {
     publish(params) {
         return request({
-            url:"/api/artical/saveArtical",
+            url:'/api/article/new',
             params: params
         })
     },
-    getArticalList(params) {
+    getArticleList(params) {
         return request({
-            url:"/api/artical/getArticalList",
+            url:'/api/article/list',
             params: params
         })
     },
-    getArticalDetail(params) {
+    getArticleDetail(params) {
         return request({
-            url:"/api/artical/getArticalDetail",
+            url:'/api/article/detail',
             params: params
         })
     },
-    deleteArticalById(params) {
+    updateArticleById(params) {
         return request({
-            url:"/api/artical/deleteArticalById",
+            url:'/api/article/update',
+            params: params
+        })
+    },
+    deleteArticleById(params) {
+        return request({
+            url:'/api/article/delete',
             params: params
         })
     }
